@@ -6,7 +6,7 @@ let position = 0;
 
 function handlekeyup(event) {
     if (event.keyCode === 32 || event.keyCode === 38) {
-        if (!isJumping) {   
+        if (!isJumping) {
             jump();
         }
     }
@@ -48,7 +48,7 @@ function createCactus() {
 
     let leftInterval = setInterval(() => {
         if (cactusPosition < -60) {
-            clearInterval(leftInterval); 
+            clearInterval(leftInterval);
             background.removeChild(cactus)
         } else if (cactusPosition > 0 && cactusPosition < 60 && position < 60) {
             // Game Over
